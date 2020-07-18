@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gerador de Senha</title>
+</head>
+
+<body>
+
+
+  <header>
+    <h1>Gerador de senhas</h1>
+  </header>
+
+  <section class="container">
+
+    <div class='password-output'>Selecione as opções</div>
+
+    <div class="options">
+      <table>
+        <tr>
+          <td>Quantidade de caracteres:</td>
+          <td><input type="number" class='amount' min='0' max='20'></td>
+        </tr>
+        <tr>
+          <td>Letras Maiscúlas</td>
+          <td><input type="checkbox" id="capital-letters"></td>
+        </tr>
+
+        <tr>
+          <td>Letras Minúsculas</td>
+          <td><input type="checkbox" id="small-letters"></td>
+        </tr>
+
+        <tr>
+          <td>Números</td>
+          <td><input type="checkbox" id="numbers"></td>
+        </tr>
+
+        <tr>
+          <td>Símbolos</td>
+          <td><input type="checkbox" id="symbols"></td>
+        </tr>
+      </table>
+    </div>
+
+    <button class='gen-password'>Gerar Senha</button>
+    <div class="successfully-copied"></div>
+
+
+
+  </section>
+
+  <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>
